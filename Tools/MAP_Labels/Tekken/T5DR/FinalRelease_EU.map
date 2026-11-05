@@ -1,0 +1,134 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+08800000:
+.undef	PPSSPP_UserMemory	;Address From
+
+
+#	Game
+08839154:
+.undef	Fun_GetGhostOppCharaID
+0883916c:
+.undef	Fun_SaveGhostOppCharaID
+
+08842824:
+.undef	Fun_YurinDojoGhosts
+088428ec:
+.undef	Loop	;While lower than 34
+08842920:
+.undef	save number of Ghosts	;sh s6
+0884298c:
+.undef	save Ghost CharaID	;sb s1
+
+08842d98:
+.undef	Fun_YurinDojoUnlocked
+
+08846df8:
+.undef	save Chara ID (Ghosts)
+
+0892f374:
+.undef	Ghosts Init	;t7 = CharaID
+0892f3ec:
+.undef	Ghost init fail
+0892f404:
+.undef	Ghost init pass
+
+0883bca4:
+.undef	randomize stage
+
+08b7692c:
+.word	g_GameMode
+08b76954:
+.word	g_Stage
+
+08b7b9b4:
+.word	GameplayData
+.word	PlayerData
+
+#	Character
+08837ce0:
+.undef	Disable
+.undef
+.undef	Enable
+
+08837d10:
+.undef	Fun_CharaID
+
+08960368:
+.undef	get chara ID
+
+#	- Characters
+08acb1f4:
+.word	Chara_Data Jinpachi	;Unlock condition
+
+08acb2ac:
+.word	Chara IDs
+08b4b268:
+.word	Chara IDs Pointers
+
+08b4b378:
+.word	Chara - Jinpachi_ID Pointer
+.half	number of costumes
+.half	number of costumes unlocked
+
+#	- Table
+
+#	-- Functions
+08838240:
+.undef	Fun_GetCharaPotrait
+
+088380ac:
+.undef	Fun_GetCostumesUnlocked
+088380cc:
+.undef	Fun_GetCostumesNum
+
+088380ec:
+.undef	Fun_GetCharaID
+.undef
+.undef
+.undef	cursor ID (a1)
+.undef
+.undef	cursor ID offset
+.undef	chara address ID
+.undef
+.undef	cursor ID offset add
+.undef	load chara/costume ID
+
+088fd658:
+.undef	Fun_ApplyCharaIcon
+
+08902940:
+.undef	Fun_CharaSelectNormal
+08908d3c:
+.undef	Fun_CharaSelectQuick
+0895ed38:
+.undef	Fun_GetCharaTableID
+
+0895f8d4:
+.undef	Fun_CursorNeedCharaID
+.undef
+.undef
+.undef	load cursor ID (a0)
+
+#	-- Data
+08b30ca4:
+.word	Chara Table (Normal)
+.word	number of chara
+.word	Chara Table (Customize)
+.word	number of chara
+
+088eb580:
+.undef	Fun_TheaterIcons
+08c39cd0:
+.word	Show Theater Chara Icons	;Others and Jinpachi
+
+08b79ddc:
+.word	Customization Chara Table	;1 = Enable (Removed "hatena")
+089c0134:
+.undef	customization chara table
+
+#	Player
+08b79bf0:
+.word	Player 1 (Left)	;Cursor ID
+.word
+.word	Player 1 Chara/Costume ID

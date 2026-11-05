@@ -1,0 +1,90 @@
+- JINPACHI -
+- Enable Only
+patch=1,EE,0890321c,word,38430018
+patch=1,EE,0895f8e8,word,38830018
+patch=1,EE,08b30d84,word,00222321
+
+- Enable Customization
+patch=1,EE,089bbe3c,word,38830018
+patch=1,EE,089bdf9c,word,24020023
+patch=1,EE,089bdfac,word,38c30018
+patch=1,EE,08b30cac,word,08b30cb4
+
+- Enable Customization (Extra Costumes on CIRCLE and TRIANGLE)
+patch=1,EE,089c00b0,word,28420004
+
+- Enable 2 extra costumes
+patch=1,EE,08acb260,word,08837ce8
+patch=1,EE,08acb284,word,08837ce8
+
+patch=1,EE,08837ce4,word,24020001 //does not work on boot
+
+- Disable Stage Force
+patch=1,EE,08841f14,word,24030023
+
+- Enable Icons
+patch=1,EE,08908fbc,word,24040002
+patch=1,EE,08c39cd0,word,00000001
+-- No Quick Select
+patch=1,EE,08902a8c,word,0a242409
+patch=1,EE,08902aa8,word,86250170
+patch=1,EE,08902aac,word,8626016c
+patch=1,EE,08902ab0,word,0e23f596
+patch=1,EE,08902ab4,word,02602021
+patch=1,EE,08902ab8,word,0a240a37
+patch=1,EE,08902abc,word,8fbf0018
+patch=1,EE,08909024,word,3a010022
+patch=1,EE,08909028,word,14200005
+patch=1,EE,0890902c,word,8e640058
+patch=1,EE,08909030,word,0e27509d
+patch=1,EE,08909034,word,00000000
+patch=1,EE,08909038,word,0a240ab5
+patch=1,EE,0890903c,word,00000000
+patch=1,EE,08909040,word,0a240ab3
+patch=1,EE,08909044,word,00000000
+
+- Ghost
+-- write
+patch=1,EE,08930018,word,28820023
+patch=1,EE,088992d8,word,2ae20023
+patch=1,EE,08899de4,word,28a20023
+
+-- read
+patch=1,EE,088428f0,word,2a220023
+
+patch=1,EE,0892f158,word,28c504c9
+patch=1,EE,0892f1b4,word,28e60023
+
+-- GUI
+patch=1,EE,08900e58,word,24030023 //Show rank when selecting next opponent
+patch=1,EE,0892ef34,word,24020023 //shows rank in-game
+
+-- Ghost data init
+patch=1,EE,08912380,word,24030023
+patch=1,EE,0897b250,word,38420023
+patch=1,EE,089b8140,word,24020023
+patch=1,EE,089b815c,word,24020023
+patch=1,EE,089b821c,word,24020023
+patch=1,EE,089b8254,word,24020023
+patch=1,EE,08912b10,word,24020023
+
+question mark select cursors
+08D8A71E - face_hatena_01/02
+
+- GHOSTM -
+- My Ghosts in Yurin Dojo
+patch=1,EE,0889a938,word,24655fb0
+patch=1,EE,0892f968,word,26e5e92c (alt. patch=1,EE,0892f990,word,10000010)
+patch=1,EE,089300bc,word,1440000a
+patch=1,EE,08aee8e0,word,00004d54
+
+//Jinpachi incl.
+patch=1,EE,0892f998,word,2a820023
+patch=1,EE,0892fa2c,word,2a820023
+patch=1,EE,0892faa0,word,2a820023
+//
+patch=1,EE,089300b8,word,2ca2002c
+patch=1,EE,089300c4,word,2ca2004f
+patch=1,EE,089300cc,word,24a7ffd4
+patch=1,EE,0892faa8,word,28a2002c
+patch=1,EE,0892fab0,word,24a5ffd4
