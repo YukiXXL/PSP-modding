@@ -1,0 +1,26 @@
+- Freestyle Practice replaced with Old Training GM
+patch=1,EE,0885e014,word,24060007
+patch=1,EE,0885e2cc,word,24060007
+
+- VS CPU Training replaced with hidden GM with CPU selecting
+patch=1,EE,0885e048,word,24060011
+patch=1,EE,0885e300,word,24060011
+
+- Quick Battle CPU replaced with unused VS Battle
+patch=1,EE,08988f08,word,24060003
+patch=1,EE,08989114,word,24060003
+
+- Unlock Menus
+patch=1,EE,089c8470,word,24040002
+
+- Changing Background
+09b897e0 -> +29e0
+patch=1,EE,089c85ec,word,24020003
+patch=1,EE,089c85f8,word,a06229e0
+
+- Practice with Stage Select
+patch=1,EE,0895f0d4,word,0e20d996
+patch=1,EE,0895f528,word,00001021
+
+- More Stages (Inferno - skip 3 (crash) - 2 Practice - skip 3, 2 hidden)
+patch=1,EE,0895f544,word,2415001f

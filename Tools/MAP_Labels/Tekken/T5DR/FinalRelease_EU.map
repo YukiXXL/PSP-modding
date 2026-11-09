@@ -5,6 +5,16 @@
 .undef	PPSSPP_UserMemory	;Address From
 
 
+#	Menu
+089c83e8:
+.undef	Fun_UnlockMenu
+089c8464:
+.undef	Fun_isMenuUnlocked
+
+08b7692c:
+.word	m_CurrentMenu
+.word	m_NextMenu
+
 #	Game
 08839154:
 .undef	Fun_GetGhostOppCharaID
@@ -36,7 +46,7 @@
 0883bca4:
 .undef	randomize stage
 
-08b7692c:
+08b7641c:
 .word	g_GameMode
 08b76954:
 .word	g_Stage
@@ -44,6 +54,21 @@
 08b7b9b4:
 .word	GameplayData
 .word	PlayerData
+
+#	Game Mode
+0882eda4:
+.undef	Fun_LoadGameMode
+088366a8:
+.undef	Fun_isPracticeGM
+
+08986d24:
+.undef	Fun_SaveGMMenuItem
+0898d888:
+.undef	Fun_SaveGameMode
+
+#	- Network
+08855a78:
+.undef	stage select max load
 
 #	Character
 08837ce0:
@@ -128,6 +153,11 @@
 .undef	customization chara table
 
 #	Player
+008b7b98:
+.word	Save Data (Dojo)
+09b897e0:
+.word	Save Data (Menus)
+
 08b79bf0:
 .word	Player 1 (Left)	;Cursor ID
 .word
