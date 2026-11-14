@@ -24,3 +24,6 @@ patch=1,EE,0895f528,word,00001021
 
 - More Stages (Inferno - skip 3 (crash) - 2 Practice - skip 3, 2 hidden)
 patch=1,EE,0895f544,word,2415001f
+
+
+Tekken Ball GM = 26

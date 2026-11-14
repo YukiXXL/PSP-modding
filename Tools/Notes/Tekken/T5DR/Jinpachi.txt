@@ -1,6 +1,7 @@
 - JINPACHI -
 - Enable Only
 patch=1,EE,0890321c,word,38430018
+patch=1,EE,089033d0,word,38430018
 patch=1,EE,0895f8e8,word,38830018
 patch=1,EE,08b30d84,word,00222321
 

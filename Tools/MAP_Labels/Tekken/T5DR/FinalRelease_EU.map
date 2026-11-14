@@ -55,12 +55,103 @@
 .word	GameplayData
 .word	PlayerData
 
+#	Stages
+08b3089c:
+.undef	StageStringsID
+.word	Ground Zero
+.word	Western Gate
+.word	Autumn Temple
+.word	Meteor Shower
+.word	Ghetto Pit
+.word	City Lights
+.word	Great Plains
+.word	Galleon
+.word	All Hallow's Eve
+.word	Winter Palace
+.word	Festival
+.word	Aurora Australis
+.word	Heaven's Gate
+.word	Space Colony
+.word	Pool Party
+.word	Playroom
+.word	Wolve's Den
+.word	Industrial Complex
+.word	Ominous Mist
+.word	Inferno
+.word	Stage Wall ON
+.word	Stage Wall OFF
+
 #	Game Mode
 0882eda4:
 .undef	Fun_LoadGameMode
 088366a8:
 .undef	Fun_isPracticeGM
 
+08b30a04:
+.word	GameMode_CursorSelect	;Arcade
+.word	Demo
+.word	Story
+.word	VS
+.word	Team Battle
+.word	Time Attack
+.word	Survival
+.word	Training (Old)
+.word	08
+.word	Customize
+.word	Gold Rush
+.word	Command Attack
+.word	0C
+.word	Practice Freestyle
+.word	Practice Command Training
+.word	Practice VS CPU Training
+.word	Practice Defensive Training
+.word	Ghost Fight
+.word	Practice Tutorial (second time)
+.word	Practice Tutorial (first time)
+.word	Tekken Dojo
+.word	15
+.word	16
+.word	17
+.word	18
+.word	19
+.word	1A
+.word	1B
+.word	1C
+.word	1D
+.word	Tekken Bowl
+.word	1F
+.word	20
+.word	21
+.word	Network VS Battle
+.word	23
+.word	Network Team Battle
+.word	Network Tekken Bowl
+.word	Network Tekken Ball
+.word	27
+.word	Music
+.word	29
+08960468:
+.undef	Select One Chara
+08960578:
+.undef	Team Select
+08960688:
+.undef	Select One Chara
+089606bc:
+.undef	Select Two Chara
+08960540:
+.undef	Select Two and Stage
+0896055c:
+.undef	Network (2P)
+0896049c:
+.undef	None
+0896049c:
+.undef	None
+
+08b30b54:
+.word	GameMode_SelectChara	;Arcade
+
+08986c98:
+.undef	Fun_SaveGMSubMenuItem
 08986d24:
 .undef	Fun_SaveGMMenuItem
 0898d888:
@@ -159,6 +250,38 @@
 .word	Save Data (Menus)
 
 08b79bf0:
-.word	Player 1 (Left)	;Cursor ID
+.word	P1 (Left)	;Cursor ID
 .word
-.word	Player 1 Chara/Costume ID
+.word	P1 Chara ID
+.word	P1 CharaCostume ID picked
+.word	P1 CharaCostume ID cursor
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	P2 (Right)	;Cursor ID
+.word
+.word	P2 Chara ID
+.word	P2 CharaCostume ID picked
+.word	P2 CharaCostume ID cursor
